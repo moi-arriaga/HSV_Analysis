@@ -1,0 +1,11 @@
+vro=VideoReader('mk8000.avi');
+% changeFrames(1,1,8000,256,vro,'mkt28to8',(11972-5000));
+changeFrames(5,8,8000,256,vro,'mkt28to5',(11972-5000));
+changeFrames(1,2,8000,256,vro,'mkt28to4',(11972-5000));
+changeFrames(1,4,8000,256,vro,'mkt28to2',(11972-5000));
+changeFramesExtraPadding(1,1,8000,256,vro,'mkt2e8to8',(11972-5000));
+changeFramesExtraPadding(5,8,8000,256,vro,'mkt2e8to5',(11972-5000));
+changeFramesExtraPadding(1,2,8000,256,vro,'mkt2e8to4',(11972-5000));
+changeFramesExtraPadding(1,4,8000,256,vro,'mkt2e8to2',(11972-5000));
+mkt2par=Analyze('mkt2');
+mkt2epar=Analyze('mkt2e');
