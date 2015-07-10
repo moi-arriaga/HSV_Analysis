@@ -73,6 +73,8 @@ while (size(C{1},1)-size(C{q},1))==0
             end
         end
     end
+	%another random change, still testing git
+	abcdefg=0;
     fprintid=fopen('VideoNumbers.txt');
     fprintf(fprintid,'%s%d\n',id,q);
     %     Plot_Video_Parameters(q,id,foriginal);
