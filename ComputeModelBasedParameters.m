@@ -3,7 +3,7 @@ clear; close all; drawnow;
 datadir = '..\data\';
 summaryxls = '..\DataSummary.xlsx';
 modelxls = '..\Individual_ModelBased_Parameters.xlsx';
-
+%Just changing a line of code to try out Git
 % Retrieve study data
 [~,~,raw] = xlsread(summaryxls);
 info = {'ID','Condition','VHI'};
