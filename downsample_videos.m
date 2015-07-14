@@ -30,13 +30,14 @@ for c=1:length(cutoffs)
             for i=0:(size(X,1)/ratio-1)
                 Y(i+1,:)=X(1+i*ratio,:);
             end
+
             Y=transpose(Y);
             
             name=sprintf('%s%d%s%d%s%d%s',id,fs/1000,'to',rates(n)/1000,'cut',cutoffs(c)/1000,'.avi')
             % produce output AVI
             vidObj = VideoWriter(name,'Uncompressed AVI');
             %vidObj = VideoWriter(sprintf('res',fs,'to',fs*P/Q),'Uncompressed AVI');
-            vidObj.FrameRate = VRO.FrameRate/ratio;
+            vidObj.FrameRate=VRO.FrameRate/ratio;
             open(vidObj);
             z=reshape(Y(:,:),[SZ(1),SZ(2),1,round(N/ratio)]);
             % Write each frame to the file.
